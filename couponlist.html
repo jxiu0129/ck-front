@@ -9,10 +9,14 @@
 		<title>Coupon - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/edit.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body class="subpage">
-
+	<div class="container">
 		<!-- Header -->
 		<header id="header">
 			<nav class="left">
@@ -20,7 +24,29 @@
 			</nav>
 			<a href="index.html" class="logo">NCCU Attendance</a>
 			<nav class="right">
-				<a href="#" class="button alt">Log in</a>
+				<a href="#" class="button alt" data-toggle="modal" data-target="#exampleModal">Log in</a>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>政大錢包logo</p>
+								<ul class="actions fit">
+									<li><a href="#" class="button special fit">以政大錢包身份登入</a></li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</nav>
 		</header>
 
@@ -87,7 +113,29 @@
 
 					<!--button-->
 					<ul class="actions fit">
-						<li><a href="after_login_pages/addevent.html" class="button fit">新增活動</a></li>
+						<li><a href="" class="button fit" data-toggle="modal" data-target="#exampleModal">新增活動</a></li>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLabel">Log in</h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<p>政大錢包logo</p>
+										<ul class="actions fit">
+											<li><a href="#" class="button special fit">以政大錢包身份登入</a></li>
+										</ul>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</ul>
 					</div>
 			</section>
@@ -110,6 +158,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+	</div>
 	</body>
 </html>

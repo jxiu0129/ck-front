@@ -9,10 +9,14 @@
 		<title>My Events - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/edit.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</head>
 	<body class="subpage">
-
+	<div class="container">
 		<!-- Header -->
 		<header id="header">
 			<nav class="left">
@@ -27,9 +31,9 @@
 		<!-- Menu -->
 		<nav id="menu">
 			<ul class="links">
-				<li><a href="../index.html">首頁</a></li>
-				<li><a href="../eventslist.html">活動列表</a></li>
-				<li><a href="../couponlist.html">coupon排行榜</a></li>
+				<li><a href="index_after_login.html">首頁</a></li>
+				<li><a href="eventslist_after_login.html">活動列表</a></li>
+				<li><a href="couponlist_after_login.html">coupon排行榜</a></li>
 				<li><a href="myevents.html">我辦的活動</a></li>
 				<li><a href="myrecords.html">我參加的活動</a></li>
 				<li><a href="qrcodelist.html">QRCode</a></li>
@@ -49,10 +53,9 @@
 						<table>
 							<thead>
 							<tr>
-								<th>活動id</th>
+								<th><img src="../images/code.jpeg" height="20" width="20"/>活動id</th>
 								<th>活動名稱</th>
 								<th>活動日期</th>
-								<th>活動地點</th>
 								<th>投資點數</th>
 								<th>參加人數</th>
 								<th>修改/刪除</th>
@@ -60,10 +63,34 @@
 							</thead>
 							<tbody>
 							<tr>
-								<td><a href="">活動1-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動1-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3>簽到條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+												<h3>刷退條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>活動1</td>
 								<td>時間1</td>
-								<td>地點1</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									500
@@ -71,11 +98,36 @@
 								<td><a href="attendancelist.html">100</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
+
 							<tr>
-								<td><a href="">活動2-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動2-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3>簽到條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+												<h3>刷退條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>活動2</td>
 								<td>時間2</td>
-								<td>地點2</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									600
@@ -83,11 +135,36 @@
 								<td><a href="attendancelist.html">120</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
+
 							<tr>
-								<td><a href="">活動3-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動3-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3>簽到條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+												<h3>刷退條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>活動3</td>
 								<td>時間3</td>
-								<td>地點3</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									500
@@ -95,11 +172,36 @@
 								<td><a href="attendancelist.html">100</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
+
 							<tr>
-								<td><a href="">活動4-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動4-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3>簽到條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+												<h3>刷退條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>活動4</td>
 								<td>時間4</td>
-								<td>地點4</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									400
@@ -107,11 +209,36 @@
 								<td><a href="attendancelist.html">100</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
+
 							<tr>
-								<td><a href="">活動5-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動5-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3>簽到條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+												<h3>刷退條碼</h3>
+												<span class="image fit"><img src="../images/code.jpeg"/></span>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>活動5</td>
 								<td>時間5</td>
-								<td>地點5</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									600
@@ -119,6 +246,7 @@
 								<td><a href="attendancelist.html">100</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
+
 							</tbody>
 						</table>
 					</div>
@@ -150,6 +278,6 @@
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
-
+	</div>
 	</body>
 </html>

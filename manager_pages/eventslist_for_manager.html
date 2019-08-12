@@ -9,7 +9,11 @@
 		<title>NCCU Attendance For Manager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/edit.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</head>
 	<body class="subpage">
 
@@ -62,58 +66,186 @@
 								<th>承辦單位id</th>
 								<th>投資點數</th>
 								<th>參加人數</th>
+								<th>會員修改記錄</th>
 								<th>修改/刪除</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
-								<td><a href="">活動1-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動1-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動1</p>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>承辦單位1-id</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									500
 								</td>
 								<td><a href="attendancelist_for_manager.html">100</a></td>
+								<td><a href="">會員修改記錄</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
-								<td><a href="">活動2-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動2-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動2</p>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								<td>承辦單位2-id</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									600
 								</td>
 								<td><a href="attendancelist_for_manager.html">120</a></td>
+								<td><a href="">會員修改記錄</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
-								<td><a href="">活動3-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動3-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動3</p>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<td>承辦單位3-id</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									500
 								</td>
 								<td><a href="attendancelist_for_manager.html">100</a></td>
+								<td><a href="">會員修改記錄</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
-								<td><a href="">活動4-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動4-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動4</p>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<td>承辦單位4-id</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									400
 								</td>
 								<td><a href="attendancelist_for_manager.html">100</a></td>
+								<td><a href="">會員修改記錄</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
-								<td><a href="">活動5-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動5-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動5</p>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<td>承辦單位5-id</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									600
 								</td>
 								<td><a href="attendancelist_for_manager.html">100</a></td>
+								<td><a href="">會員修改記錄</a></td>
 								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							</tbody>

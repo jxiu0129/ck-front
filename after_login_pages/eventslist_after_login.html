@@ -9,53 +9,34 @@
 		<title>Events - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/edit.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/edit.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</head>
 	<body class="subpage">
-	<div class="container">
+
 		<!-- Header -->
 		<header id="header">
 			<nav class="left">
 				<a href="#menu"><span>Menu</span></a>
 			</nav>
-			<a href="index.html" class="logo">NCCU Attendance</a>
+			<a href="index_after_login.html" class="logo">NCCU Attendance</a>
 			<nav class="right">
-				<a href="#" class="button alt" data-toggle="modal" data-target="#exampleModal">Log in</a>
-				<!-- Modal -->
-				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Log in</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<p>政大錢包logo</p>
-								<ul class="actions fit">
-									<li><a href="#" class="button special fit">以政大錢包身份登入</a></li>
-								</ul>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
+				<a href="../index.html" class="button alt">Log out</a>
 			</nav>
 		</header>
 
 		<!-- Menu -->
 		<nav id="menu">
 			<ul class="links">
-				<li><a href="index.html">首頁</a></li>
-				<li><a href="eventslist.html">活動列表</a></li>
-				<li><a href="couponlist.html">coupon排行榜</a></li>
+				<li><a href="index_after_login.html">首頁</a></li>
+				<li><a href="eventslist_after_login.html">活動列表</a></li>
+				<li><a href="couponlist_after_login.html">coupon排行榜</a></li>
+				<li><a href="myevents.html">我辦的活動</a></li>
+				<li><a href="myrecords.html">我參加的活動</a></li>
+				<li><a href="qrcodelist.html">QRCode</a></li>
 			</ul>
 			<!--<ul class="actions vertical">
 				<li><a href="#" class="button fit">Login</a></li>
@@ -126,34 +107,12 @@
 						</table>
 					</div>
 					<header class="align-center">
-						<p>準備好成為我們的合作對象了嗎？</p>
+						<p>再來舉辦一場活動吧！</p>
 					</header>
 
 					<!--button-->
 					<ul class="actions fit">
-						<li><a href="" class="button fit" data-toggle="modal" data-target="#exampleModal">新增活動</a></li>
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h3 class="modal-title" id="exampleModalLabel">Log in</h3>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<p>政大錢包logo</p>
-										<ul class="actions fit">
-											<li><a href="#" class="button special fit">以政大錢包身份登入</a></li>
-										</ul>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									</div>
-								</div>
-							</div>
-						</div>
+						<li><a href="addevent.html" class="button fit">新增活動</a></li>
 					</ul>
 					</div>
 			</section>
@@ -171,11 +130,11 @@
 		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</div>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
 	</body>
 </html>
