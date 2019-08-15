@@ -63,14 +63,14 @@
 							</thead>
 							<tbody>
 							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動1-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#event1-qrModal">活動1-id</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="event1-qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<h3 class="modal-title" id="qrModalLabel">QR Code</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -96,18 +96,72 @@
 									500
 								</td>
 								<td><a href="attendancelist.html">100</a></td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
-							</tr>
-
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動2-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#event-edit1">修改</a>/<a href="" data-toggle="modal" data-target="#event-delete3">刪除</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="event-edit1" tabindex="-1" role="dialog" aria-labelledby="event-editLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<h3 class="modal-title" id="event-editLabel">修改活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body" style="text-align: left">
+
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動1</p>
+												<div class="6u 12u$(xsmall) inline">
+													<input type="text" name="name" id="event-editName" value="" placeholder="修改活動名稱" />
+												</div>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">時間1</p>
+												<br>
+												<input type="datetime-local" id="event-editDateTime" placeholder="2014-09-18">
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<input type="submit" class="btn btn-primary" value="Save"/>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event-delete1" tabindex="-1" role="dialog" aria-labelledby="event-deleteLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="event-deleteLabel">刪除活動</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>請注意！當你按下Delete，該活動將被刪除。</p>
+												<p>若有需要復原，請洽詢系統服務人員。</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Delete</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</tr>
+
+							<tr>
+								<td><a href="" data-toggle="modal" data-target="#event2-qrModal">活動2-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event2-qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="qrModalLabel">QR Code</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -133,18 +187,72 @@
 									600
 								</td>
 								<td><a href="attendancelist.html">120</a></td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
-							</tr>
-
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動3-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#event-edit2">修改</a>/<a href="" data-toggle="modal" data-target="#event-delete2">刪除</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="event-edit2" tabindex="-1" role="dialog" aria-labelledby="event-editLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<h3 class="modal-title" id="event-editLabel">修改活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body" style="text-align: left">
+
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動2</p>
+												<div class="6u 12u$(xsmall) inline">
+													<input type="text" name="name" id="event-editName" value="" placeholder="修改活動名稱" />
+												</div>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">時間2</p>
+												<br>
+												<input type="datetime-local" id="event-editDateTime" placeholder="2014-09-18">
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<input type="submit" class="btn btn-primary" value="Save"/>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event-delete2" tabindex="-1" role="dialog" aria-labelledby="event-deleteLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="event-deleteLabel">刪除活動</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>請注意！當你按下Delete，該活動將被刪除。</p>
+												<p>若有需要復原，請洽詢系統服務人員。</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Delete</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</tr>
+
+							<tr>
+								<td><a href="" data-toggle="modal" data-target="#event3-qrModal">活動3-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event3-qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="qrModalLabel">QR Code</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -170,18 +278,72 @@
 									500
 								</td>
 								<td><a href="attendancelist.html">100</a></td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
-							</tr>
-
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動4-id</a></td>
+								<td><a href="" data-toggle="modal" data-target="#event-edit3">修改</a>/<a href="" data-toggle="modal" data-target="#event-delete3">刪除</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="event-edit3" tabindex="-1" role="dialog" aria-labelledby="event-editLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<h3 class="modal-title" id="event-editLabel">修改活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body" style="text-align: left">
+
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動3</p>
+														<div class="6u 12u$(xsmall) inline">
+															<input type="text" name="name" id="event-editName" value="" placeholder="修改活動名稱" />
+														</div>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">時間3</p>
+												<br>
+												<input type="datetime-local" id="event-editDateTime" placeholder="2014-09-18">
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<input type="submit" class="btn btn-primary" value="Save"/>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event-delete3" tabindex="-1" role="dialog" aria-labelledby="event-deleteLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="event-deleteLabel">刪除活動</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>請注意！當你按下Delete，該活動將被刪除。</p>
+												<p>若有需要復原，請洽詢系統服務人員。</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Delete</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</tr>
+
+							<tr>
+								<td><a href="" data-toggle="modal" data-target="#event4-qrModal">活動4-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event4-qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title"  id="qrModalLabel">QR Code</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -207,18 +369,73 @@
 									400
 								</td>
 								<td><a href="attendancelist.html">100</a></td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
-							</tr>
+								<td><a href="" data-toggle="modal" data-target="#event-edit4">修改</a>/<a href="" data-toggle="modal" data-target="#event-delete4">刪除</a></td>
 
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動5-id</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="event-edit4" tabindex="-1" role="dialog" aria-labelledby="event-editLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">QR Code</h3>
+												<h3 class="modal-title" id="event-editLabel">修改活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body" style="text-align: left">
+
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動4</p>
+												<div class="6u 12u$(xsmall) inline">
+													<input type="text" name="name" id="event-editName" value="" placeholder="修改活動名稱" />
+												</div>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">時間4</p>
+												<br>
+												<input type="datetime-local" id="event-editDateTime" placeholder="2014-09-18">
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<input type="submit" class="btn btn-primary" value="Save"/>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event-delete4" tabindex="-1" role="dialog" aria-labelledby="event-deleteLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="event-deleteLabel">刪除活動</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>請注意！當你按下Delete，該活動將被刪除。</p>
+												<p>若有需要復原，請洽詢系統服務人員。</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Delete</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</tr>
+
+							<tr>
+								<td><a href="" data-toggle="modal" data-target="#event5-qrModal">活動5-id</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event5-qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title"  id="qrModalLabel">QR Code</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -244,7 +461,62 @@
 									600
 								</td>
 								<td><a href="attendancelist.html">100</a></td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
+								<td><a href="" data-toggle="modal" data-target="#event-edit5">修改</a>/<a href="" data-toggle="modal" data-target="#event-delete5">刪除</a></td>
+
+
+								<!-- Modal -->
+								<div class="modal fade" id="event-edit5" tabindex="-1" role="dialog" aria-labelledby="event-editLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="event-editLabel">修改活動資訊</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body" style="text-align: left">
+
+												<h3 class="inline">活動名稱：</h3><p class="inline">活動5</p>
+												<div class="6u 12u$(xsmall) inline">
+													<input type="text" name="name" id="event-editName" value="" placeholder="修改活動名稱" />
+												</div>
+												<br>
+												<h3 class="inline">活動日期：</h3><p class="inline">時間5</p>
+												<br>
+												<input type="datetime-local" id="event-editDateTime" placeholder="2014-09-18">
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<input type="submit" class="btn btn-primary" value="Save"/>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="event-delete5" tabindex="-1" role="dialog" aria-labelledby="event-deleteLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="event-deleteLabel">刪除活動</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>請注意！當你按下Delete，該活動將被刪除。</p>
+												<p>若有需要復原，請洽詢系統服務人員。</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Delete</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
 							</tr>
 
 							</tbody>
