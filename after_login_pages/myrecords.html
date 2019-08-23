@@ -36,7 +36,7 @@
 				<li><a href="couponlist_after_login.html">coupon排行榜</a></li>
 				<li><a href="myevents.html">我辦的活動</a></li>
 				<li><a href="myrecords.html">我參加的活動</a></li>
-				<li><a href="qrcodelist.html">QRCode</a></li>
+				<li><a href="qrcodelist.html">QRCode<img src="../images/fire.png" height="25" width="25"/></a></li>
 			</ul>
 			<!--<ul class="actions vertical">
 				<li><a href="#" class="button fit">Login</a></li>
@@ -53,68 +53,45 @@
 						<table>
 							<thead>
 							<tr>
-								<th>活動名稱</th>
-								<th>報到時間</th>
-								<th>刷退時間</th>
+								<th>活動名稱/ID</th>
+								<th>活動日期</th>
+								<th>活動地點</th>
+								<th>主辦單位投資金額</th>
+								<th>參與人數</th>
 								<th>獲得點數</th>
+								<th>出席狀況</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動1</a></td>
-
-								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<h3 class="inline">活動名稱：</h3><p class="inline">活動1</p>
-												<br>
-												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
-												<br>
-												<h3 class="inline">主辦單位：</h3><p class="inline">＊＊＊＊＊＊</p>
-												<br>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-								<td>報到時間1</td>
-								<td>刷退時間1</td>
+								<td title="T2019082301">活動1</td>
+								<td>日期1</td>
+								<td>地點1</td>
+								<td>
+									<img src="../images/piggy-bank.png" height="20" width="20"/>
+									500
+								</td>
+								<td>100</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									5
 								</td>
-							</tr>
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動2</a></td>
+								<td><a href="" data-toggle="modal" data-target="#record1">報到與刷退紀錄</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="record1" tabindex="-1" role="dialog" aria-labelledby="recordLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<h3 class="modal-title" id="recordLabel">報到與刷退紀錄</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
 											</div>
 											<div class="modal-body">
-												<h3 class="inline">活動名稱：</h3><p class="inline">活動2</p>
+												<h3 class="inline">報到時間：</h3><p class="inline">報到時間1</p>
 												<br>
-												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
-												<br>
-												<h3 class="inline">主辦單位：</h3><p class="inline">＊＊＊＊＊＊</p>
+												<h3 class="inline">刷退時間：</h3><p class="inline">刷退時間1</p>
 												<br>
 											</div>
 											<div class="modal-footer">
@@ -123,34 +100,36 @@
 										</div>
 									</div>
 								</div>
-
-
-								<td>報到時間2</td>
-								<td>刷退時間2</td>
+							</tr>
+							<tr>
+								<td title="T2019082302">活動2</td>
+								<td>日期2</td>
+								<td>地點2</td>
+								<td>
+									<img src="../images/piggy-bank.png" height="20" width="20"/>
+									1200
+								</td>
+								<td>150</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									8
 								</td>
-							</tr>
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動3</a></td>
+								<td><a href="" data-toggle="modal" data-target="#record2">報到與刷退紀錄</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="record2" tabindex="-1" role="dialog" aria-labelledby="recordLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<h3 class="modal-title" id="recordLabel">報到與刷退紀錄</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
 											</div>
 											<div class="modal-body">
-												<h3 class="inline">活動名稱：</h3><p class="inline">活動3</p>
+												<h3 class="inline">報到時間：</h3><p class="inline">報到時間2</p>
 												<br>
-												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
-												<br>
-												<h3 class="inline">主辦單位：</h3><p class="inline">＊＊＊＊＊＊</p>
+												<h3 class="inline">刷退時間：</h3><p class="inline">刷退時間2</p>
 												<br>
 											</div>
 											<div class="modal-footer">
@@ -159,34 +138,36 @@
 										</div>
 									</div>
 								</div>
-
-
-								<td>報到時間3</td>
-								<td>刷退時間3</td>
+							</tr>
+							<tr>
+								<td title="T2019082303">活動3</td>
+								<td>日期3</td>
+								<td>地點3</td>
+								<td>
+									<img src="../images/piggy-bank.png" height="20" width="20"/>
+									900
+								</td>
+								<td>150</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									6
 								</td>
-							</tr>
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動4</a></td>
+								<td><a href="" data-toggle="modal" data-target="#record3">報到與刷退紀錄</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="record3" tabindex="-1" role="dialog" aria-labelledby="recordLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<h3 class="modal-title" id="recordLabel">報到與刷退紀錄</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
 											</div>
 											<div class="modal-body">
-												<h3 class="inline">活動名稱：</h3><p class="inline">活動4</p>
+												<h3 class="inline">報到時間：</h3><p class="inline">報到時間3</p>
 												<br>
-												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
-												<br>
-												<h3 class="inline">主辦單位：</h3><p class="inline">＊＊＊＊＊＊</p>
+												<h3 class="inline">刷退時間：</h3><p class="inline">刷退時間3</p>
 												<br>
 											</div>
 											<div class="modal-footer">
@@ -195,34 +176,36 @@
 										</div>
 									</div>
 								</div>
-
-
-								<td>報到時間4</td>
-								<td>刷退時間4</td>
+							</tr>
+							<tr>
+								<td title="T2019082304">活動4</td>
+								<td>日期4</td>
+								<td>地點4</td>
+								<td>
+									<img src="../images/piggy-bank.png" height="20" width="20"/>
+									500
+								</td>
+								<td>100</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 									5
 								</td>
-							</tr>
-							<tr>
-								<td><a href="" data-toggle="modal" data-target="#exampleModal">活動5</a></td>
+								<td><a href="" data-toggle="modal" data-target="#record4">報到與刷退紀錄</a></td>
 
 								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="record4" tabindex="-1" role="dialog" aria-labelledby="recordLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h3 class="modal-title" id="exampleModalLabel">活動資訊</h3>
+												<h3 class="modal-title" id="recordLabel">報到與刷退紀錄</h3>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
 											</div>
 											<div class="modal-body">
-												<h3 class="inline">活動名稱：</h3><p class="inline">活動5</p>
+												<h3 class="inline">報到時間：</h3><p class="inline">報到時間4</p>
 												<br>
-												<h3 class="inline">活動日期：</h3><p class="inline">2019/10/10</p>
-												<br>
-												<h3 class="inline">主辦單位：</h3><p class="inline">＊＊＊＊＊＊</p>
+												<h3 class="inline">刷退時間：</h3><p class="inline">刷退時間4</p>
 												<br>
 											</div>
 											<div class="modal-footer">
@@ -231,13 +214,43 @@
 										</div>
 									</div>
 								</div>
-
-
-								<td>報到時間5</td>
-								<td>無刷退紀錄</td>
+							</tr>
+							<tr>
+								<td title="T2019082305">活動5</td>
+								<td>日期5</td>
+								<td>地點5</td>
+								<td>
+									<img src="../images/piggy-bank.png" height="20" width="20"/>
+									500
+								</td>
+								<td>100</td>
 								<td>
 									<img src="../images/piggy-bank.png" height="20" width="20"/>
 								</td>
+								<td><a href="" data-toggle="modal" data-target="#record5">報到與刷退紀錄</a></td>
+
+								<!-- Modal -->
+								<div class="modal fade" id="record5" tabindex="-1" role="dialog" aria-labelledby="recordLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h3 class="modal-title" id="recordLabel">報到與刷退紀錄</h3>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h3 class="inline">報到時間：</h3><p class="inline">報到時間5</p>
+												<br>
+												<h3 class="inline">刷退時間：</h3><p class="inline">無刷退紀錄</p>
+												<br>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</tr>
 							</tbody>
 						</table>

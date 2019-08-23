@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>NCCU Attendance For Manager</title>
+		<title>Attendace List - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -22,7 +22,7 @@
 			<nav class="left">
 				<a href="#menu"><span>Menu</span></a>
 			</nav>
-			<a href="index_for_manager.html" class="logo">NCCU Attendance</a>
+			<a href="index_after_login.html" class="logo">NCCU Attendance</a>
 			<nav class="right">
 				<a href="../index.html" class="button alt">Log out</a>
 			</nav>
@@ -31,9 +31,12 @@
 		<!-- Menu -->
 		<nav id="menu">
 			<ul class="links">
-				<li><a href="index_for_manager.html">首頁</a></li>
-				<li><a href="eventslist_for_manager.html">活動列表</a></li>
-				<li><a href="member_sheet_for_manager.html">會員清單</a></li>
+				<li><a href="index_after_login.html">首頁</a></li>
+				<li><a href="eventslist_after_login.html">活動列表</a></li>
+				<li><a href="couponlist_after_login.html">coupon排行榜</a></li>
+				<li><a href="myevents.html">我辦的活動</a></li>
+				<li><a href="myrecords.html">我參加的活動</a></li>
+				<li><a href="qrcodelist.html">QRCode</a></li>
 			</ul>
 			<!--<ul class="actions vertical">
 				<li><a href="#" class="button fit">Login</a></li>
@@ -65,7 +68,6 @@
 								<th>參與者id</th>
 								<th>報到時間</th>
 								<th>刷退時間</th>
-								<th>修改/刪除</th>
 							</tr>
 							</thead>
 							<tbody>
@@ -73,31 +75,26 @@
 								<td>id 1</td>
 								<td>報到時間1</td>
 								<td>刷退時間1</td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
 								<td>id 2</td>
 								<td>報到時間2</td>
 								<td>刷退時間2</td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
 								<td>id 3</td>
 								<td>報到時間3</td>
 								<td>刷退時間3</td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
 								<td>id 4</td>
 								<td>報到時間4</td>
 								<td>刷退時間4</td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							<tr>
 								<td>id 5</td>
 								<td>報到時間5</td>
 								<td>刷退時間5</td>
-								<td><a href="">修改</a>/<a href="">刪除</a></td>
 							</tr>
 							</tbody>
 						</table>
@@ -105,7 +102,9 @@
 
 					<!--button-->
 					<ul class="actions fit">
-						<li><a href="addrecord_for_manager.html" class="button fit">手動新增報到或刷退紀錄</a></li>
+						<li><a href="add_checkin_record.html" class="button special fit">新增報到紀錄</a></li>
+						<li><a href="add_checkout_record.html" class="button fit">新增刷退紀錄</a></li>
+						<li><a href="add_checkinandout_record.html" class="button alt fit">新增報到與刷退紀錄</a></li>
 					</ul>
 					</div>
 			</section>

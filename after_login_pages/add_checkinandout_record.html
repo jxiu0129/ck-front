@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Attendace List - NCCU Attendance</title>
+		<title>Add Check-in-out Record - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -47,66 +47,40 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>出席表</h1>
+						<h1>新增報到與刷退紀錄</h1>
 					</header>
 
+					<!-- Form -->
+
 					<form method="post" action="#">
-						<div class="row uniform">
-							<div class="9u 12u$(small)">
-								<input type="text" name="query" id="query" value="" placeholder="輸入參與者id" />
+						<!--<div class="row uniform">-->
+						<div align="center">
+							<div class="6u 12u$(xsmall)">
+								<input type="text" name="name" id="userID" value="" placeholder="參與者id" />
 							</div>
-							<div class="3u$ 12u$(small)">
-								<input type="submit" value="搜尋" class="fit" />
+							<br>
+							<br>
+							<h3 class="inline">報到時間：</h3>
+							<input class="inline" type="datetime-local" id="checkin-addDateTime" placeholder="2014-09-18">
+							<br>
+							<br>
+							<br>
+							<h3 class="inline">刷退時間：</h3>
+							<input class="inline" type="datetime-local" id="checkout-addDateTime" placeholder="2014-09-18">
+							<br>
+							<br>
+							<br>
+
+							<!-- Break -->
+							<div class="12u$">
+								<ul class="actions">
+									<li><input type="submit" value="新增報到與刷退紀錄" /></li>
+									<li><input type="reset" value="重填資料" class="alt" /></li>
+								</ul>
 							</div>
 						</div>
 					</form>
-
-					<div class="table-wrapper">
-						<table>
-							<thead>
-							<tr>
-								<th>參與者id</th>
-								<th>報到時間</th>
-								<th>刷退時間</th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td>id 1</td>
-								<td>報到時間1</td>
-								<td>刷退時間1</td>
-							</tr>
-							<tr>
-								<td>id 2</td>
-								<td>報到時間2</td>
-								<td>刷退時間2</td>
-							</tr>
-							<tr>
-								<td>id 3</td>
-								<td>報到時間3</td>
-								<td>刷退時間3</td>
-							</tr>
-							<tr>
-								<td>id 4</td>
-								<td>報到時間4</td>
-								<td>刷退時間4</td>
-							</tr>
-							<tr>
-								<td>id 5</td>
-								<td>報到時間5</td>
-								<td>刷退時間5</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-
-					<!--button-->
-					<ul class="actions fit">
-						<li><a href="add_checkin_record.html" class="button special fit">新增報到紀錄</a></li>
-						<li><a href="add_checkout_record.html" class="button fit">新增刷退紀錄</a></li>
-						<li><a href="add_checkinandout_record.html" class="button alt fit">新增報到與刷退紀錄</a></li>
-					</ul>
-					</div>
+				</div>
 			</section>
 
 		<!-- Footer -->
