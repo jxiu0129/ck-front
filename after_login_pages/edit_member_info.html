@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Add Check-in-out Record - NCCU Attendance</title>
+		<title>Edit Member Info - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -28,56 +28,61 @@
 			</nav>
 		</header>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index_after_login.html">首頁</a></li>
-				<li><a href="eventslist_after_login.html">活動列表</a></li>
-				<li><a href="couponlist_after_login.html">電子禮券排行榜</a></li>
-				<li><a href="myrecords.html">我參加的活動</a></li>
-				<li><a href="myevents.html">我辦的活動</a></li>
-				<li><a href="qrcodelist.html">QRCode<img src="../images/fire.png" height="25" width="25"/></a></li>
-			</ul>
-			<!--<ul class="actions vertical">
-				<li><a href="#" class="button fit">Login</a></li>
-			</ul>-->
-		</nav>
-
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>新增報到與刷退紀錄</h1>
+						<h1>編輯會員資料</h1>
+						<h4>歡迎使用NCCU Attendance，首次登入煩請編輯您的會員資料以利後續進行。</h4>
 					</header>
 
 					<!-- Form -->
 
 					<form method="post" action="#">
-						<!--<div class="row uniform">-->
 						<div align="center">
+							<h3 class="inline">會員id:</h3>
+							<p class="inline">105306030</p>
+							<br>
+
+							<h3 class="inline">會員姓名:</h3>
+							<p class="inline">王小明</p>
+							<br>
+
+							<h3 class="inline">會員email:</h3>
+							<p class="inline">105306030@nccu.edu.tw</p>
+							<br>
+
+							<h3 class="inline">會員公帳點數:</h3>
+							<p class="inline">
+								<img src="../images/piggy-bank.png" height="20" width="20"/>
+								3000
+							</p>
+							<br>
+
+							<h3 class="inline">會員私帳點數:</h3>
+							<p class="inline">
+								<img src="../images/piggy-bank.png" height="20" width="20"/>
+								0
+							</p>
+							<br>
+
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="userID" value="" placeholder="參與者id" />
+								<input type="text" name="name" id="member_phone" placeholder="會員電話" />
 							</div>
 							<br>
-							<br>
-							<h3 class="inline">報到時間：</h3>
-							<input class="inline" type="datetime-local" id="checkin-addDateTime" placeholder="2014-09-18">
-							<br>
-							<br>
-							<br>
-							<h3 class="inline">刷退時間：</h3>
-							<input class="inline" type="datetime-local" id="checkout-addDateTime" placeholder="2014-09-18">
-							<br>
-							<br>
-							<br>
+
+							<p>請注意！請恰當使用本平台，禁止一切違法行為。
+								<br>一旦發現違法行為，本單位必將採取法律途徑追訴。</p>
+
 
 							<!-- Break -->
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" value="新增報到與刷退紀錄" /></li>
+									<li><input type="submit" value="新增會員" /></li>
 									<li><input type="reset" value="重填資料" class="alt" /></li>
 								</ul>
 							</div>
+
 						</div>
 					</form>
 				</div>

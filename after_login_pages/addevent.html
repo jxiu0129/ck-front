@@ -33,9 +33,9 @@
 			<ul class="links">
 				<li><a href="index_after_login.html">首頁</a></li>
 				<li><a href="eventslist_after_login.html">活動列表</a></li>
-				<li><a href="couponlist_after_login.html">coupon排行榜</a></li>
-				<li><a href="myevents.html">我辦的活動</a></li>
+				<li><a href="couponlist_after_login.html">電子禮券排行榜</a></li>
 				<li><a href="myrecords.html">我參加的活動</a></li>
+				<li><a href="myevents.html">我辦的活動</a></li>
 				<li><a href="qrcodelist.html">QRCode<img src="../images/fire.png" height="25" width="25"/></a></li>
 			</ul>
 			<!--<ul class="actions vertical">
@@ -58,19 +58,19 @@
 							<h4>活動id(屆時將自動生成)</h4>
 
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="event_name" value="" placeholder="活動名稱" />
+								<input type="text" name="name" id="event_name" placeholder="活動名稱" />
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="date" id="event_date" value="" placeholder="活動日期" />
+								<input class="inline" type="datetime-local" id="addDateTime" />
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="location" id="event_location" value="" placeholder="活動地點" />
+								<input type="text" name="location" id="event_location" placeholder="活動地點" />
 							</div>
 							<br>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="text" name="points" id="investment" value="" placeholder="投入資金" />
+								<input type="number" name="points" id="investment" placeholder="投入資金" />
 							</div>
 							<br>
 							<p>請注意！當你新增此活動後，該活動的投資金額不可再做更動。
