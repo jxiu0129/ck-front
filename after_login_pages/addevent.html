@@ -32,15 +32,13 @@
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index_after_login.html">首頁</a></li>
+				<li><a href="member_info.html">個人資料</a></li>
 				<li><a href="eventslist_after_login.html">活動列表</a></li>
 				<li><a href="couponlist_after_login.html">電子禮券排行榜</a></li>
 				<li><a href="myrecords.html">我參加的活動</a></li>
 				<li><a href="myevents.html">我辦的活動</a></li>
 				<li><a href="qrcodelist.html">QRCode<img src="../images/fire.png" height="25" width="25"/></a></li>
 			</ul>
-			<!--<ul class="actions vertical">
-				<li><a href="#" class="button fit">Login</a></li>
-			</ul>-->
 		</nav>
 
 		<!-- Main -->
@@ -70,7 +68,11 @@
 							</div>
 							<br>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="number" name="points" id="investment" placeholder="投入資金" />
+								<input type="number" name="points" id="investment" min="0" placeholder="投入資金" />
+							</div>
+							<br>
+							<div class="6u$ 12u$(xsmall)">
+								<input type="url" name="event_link" id="event_link" placeholder="活動連結" />
 							</div>
 							<br>
 							<p>請注意！當你新增此活動後，該活動的投資金額不可再做更動。
