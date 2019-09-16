@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="../assets/css/edit.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="../js/bootstrap.min.js"></script>
+	<script src="../node_modules/chart.min.js"></script>
+	<script src="../node_modules/utils.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body class="subpage">
 
@@ -687,9 +690,12 @@
 					<ul class="actions fit">
 						<li><a href="#" class="button special fit">錢包查詢餘額</a></li>
 						<li><a href="addevent.html" class="button fit">新增活動</a></li>
+
+						<!--
 						<li><a href="#" class="button alt fit" data-toggle="modal" data-target="#bar_line_chart">投資報酬率</a></li>
 
 						<!-- Modal -->
+						<!--投資報酬率圖表
 						<div class="modal fade" id="bar_line_chart" tabindex="-1" role="dialog" aria-labelledby="event-editLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
@@ -700,32 +706,42 @@
 										</button>
 									</div>
 
-									<div class="modal-body" style="text-align: left">
 
-										<h3 class="inline">活動名稱：</h3><p class="inline">活動5</p>
-										<div class="6u 12u$(xsmall) inline">
-											<input type="text" name="name" id="event-editName" value="" placeholder="修改活動名稱" />
-										</div>
-										<br>
-										<h3 class="inline">活動日期：</h3><p class="inline">時間5</p>
-										<br>
-										<input type="datetime-local" id="event-editDateTime" value="2018-06-10T19:30">
-										<br>
-										<br>
-										<h3 class="inline">活動地點：</h3><p class="inline">地點5</p>
-										<div class="6u 12u$(xsmall) inline">
-											<input type="text" name="name" id="event-editLocation" value="" placeholder="修改活動地點" />
-										</div>
-										<br>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-										<input type="submit" class="btn btn-primary" value="Save"/>
+									<div class="modal-body" style="text-align: center">
+										<canvas id="myChart" width="400" height="400"></canvas>
+
+										<script>
+                                            var ctx = document.getElementById('mychart').getContext('2d');
+                                            var Chart = new Chart(ctx, {
+                                                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                                                dataset: [{
+                                                    type: 'line',
+                                                    label: '出席人數',
+                                                    borderColor: '#25a2c3',
+                                                    borderWidth: 2,
+                                                    fill: false,
+                                                    data: [
+                                                        40,50,80,60
+                                                    ]
+                                                }, {
+                                                    type: 'bar',
+                                                    label: '投入資金',
+                                                    backgroundColor: '#f6755e',
+                                                    data: [
+                                                        2000,3000,3000,1500
+                                                    ],
+                                                    borderColor: 'white',
+                                                    borderWidth: 2
+                                                }]
+                                            });
+
+										</script>
 
 									</div>
 								</div>
 							</div>
 						</div>
+						-->
 
 					</ul>
 					</div>
