@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Add Event - NCCU Attendance</title>
+		<title>Edit Member Info - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -19,78 +19,71 @@
 
 		<!-- Header -->
 		<header id="header">
-			<nav class="left">
-				<a href="#menu"><span>Menu</span></a>
-			</nav>
 			<a href="index_after_login.html" class="logo">NCCU Attendance</a>
 			<nav class="right">
 				<a href="../index.html" class="button alt">Log out</a>
 			</nav>
 		</header>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index_for_manager.html">首頁</a></li>
-				<li><a href="eventslist_for_manager.html">活動列表</a></li>
-				<li><a href="member_sheet_for_manager.html">會員清單</a></li>
-			</ul>
-			<!--<ul class="actions vertical">
-				<li><a href="#" class="button fit">Login</a></li>
-			</ul>-->
-		</nav>
-
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>新增會員</h1>
+						<h1>編輯會員資料</h1>
+						<h4>歡迎使用NCCU Attendance，首次登入煩請編輯您的會員資料以利後續進行。</h4>
 					</header>
 
 					<!-- Form -->
 
 					<form method="post" action="#">
-						<!--<div class="row uniform">-->
 						<div align="center">
+							<p class="inline">會員id:</p>
+							<p class="inline">105306030</p>
+							<br>
+							<br>
+
+							<p class="inline">會員姓名:</p>
+							<p class="inline">王小明</p>
+							<br>
+							<br>
+
+							<p class="inline">會員email:</p>
+							<p class="inline">105306030@nccu.edu.tw</p>
+							<br>
+							<br>
+
+							<p class="inline">會員公帳點數:</p>
+							<p class="inline">
+								<img src="../images/piggy-bank.png" height="20" width="20"/>
+								3000
+							</p>
+							<br>
+							<br>
+
+							<p class="inline">會員私帳點數:</p>
+							<p class="inline">
+								<img src="../images/piggy-bank.png" height="20" width="20"/>
+								0
+							</p>
+							<br>
+							<br>
+
 							<div class="6u 12u$(xsmall)">
-								<p style="text-align: left; margin-bottom: 5px;">會員ID</p>
-								<input type="text" name="memberID" id="memberID" value="" placeholder="會員ID（錢包ID）" />
+								<input type="text" name="name" id="member_phone" placeholder="會員電話" />
 							</div>
 							<br>
-							<div class="6u 12u$(xsmall)">
-								<p style="text-align: left; margin-bottom: 5px;">使用者名稱</p>
-								<input type="text" name="memberName" id="memberName" value="" placeholder="使用者名稱" />
-							</div>
-							<br>
+
+							<p>請注意！請恰當使用本平台，禁止一切違法行為。
+								<br>一旦發現違法行為，本單位必將採取法律途徑追訴。</p>
+
 
 							<!-- Break -->
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" onclick="return CheckFunc();" value="新增會員" /></li>
+									<li><input type="submit" value="新增會員" /></li>
 									<li><input type="reset" value="重填資料" class="alt" /></li>
 								</ul>
 							</div>
-
-							<script language="javascript" type="text/javascript">
-								function CheckFunc()
-								{
-									msg = "";
-									if(document.forms[0].memberID.value == "")
-									{
-										msg = "請輸入會員ID";
-									}
-									else if(document.forms[0].memberName.value == "")
-									{
-										msg = "請輸入使用者名稱";
-									}
-									else
-									{
-										return true;
-									}
-									alert(msg);
-									return false;
-								}
-							</script>
 
 						</div>
 					</form>

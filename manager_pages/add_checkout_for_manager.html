@@ -6,7 +6,7 @@
 -->
 	<html>
 		<head>
-			<title>Add Check in and out Record - NCCU Attendance</title>
+			<title>Add Check-out Record - NCCU Attendance</title>
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -30,22 +30,21 @@
 
 		<!-- Menu -->
 		<nav id="menu">
-			<p>您好,Ｕsername</p>
 			<ul class="links">
-				<li><a href="index_after_login.html">首頁</a></li>
-				<li><a href="member_info.html">個人資料</a></li>
-				<li><a href="eventslist_after_login.html">活動列表</a></li>
-				<li><a href="myrecords.html">我參加的活動</a></li>
-				<li><a href="myevents.html">我辦的活動</a></li>
-				<li><a href="qrcodelist.html">QRCode<img src="../images/fire.png" height="25" width="25"/></a></li>
+				<li><a href="index_for_manager.html">首頁</a></li>
+				<li><a href="eventslist_for_manager.html">活動列表</a></li>
+				<li><a href="member_sheet_for_manager.html">會員清單</a></li>
 			</ul>
+			<!--<ul class="actions vertical">
+				<li><a href="#" class="button fit">Login</a></li>
+			</ul>-->
 		</nav>
 
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
 				<header class="align-center">
-					<h1>新增報到與刷退紀錄</h1>
+					<h1>新增刷退紀錄</h1>
 				</header>
 
 				<!-- Form -->
@@ -59,13 +58,8 @@
 						</div>
 						<br>
 						<div class="6u 12u$(xsmall)">
-							<p style="text-align: left; margin-bottom: 5px;" >簽到時間</p>
-							<input type="datetime-local" name="check_in_time" id="check_in_addDateTime" />
-						</div>
-						<br>
-						<div class="6u 12u$(xsmall)">
 							<p style="text-align: left; margin-bottom: 5px;" >刷退時間</p>
-							<input type="datetime-local" name="check_out_time" id="check_out_addDateTime" />
+							<input class="inline" type="datetime-local" name="check_out_time" id="check_out_addDateTime" />
 						</div>
 						<br>
 
@@ -74,7 +68,7 @@
 						<!-- Break -->
 						<div class="12u$">
 							<ul class="actions">
-								<li><input type="submit" onclick="return CheckFunc();" value="新增報到與刷退紀錄" /></li>
+								<li><input type="submit" onclick="return CheckFunc();" value="新增刷退紀錄" /></li>
 								<li><input type="reset" value="重填資料" class="alt" /></li>
 							</ul>
 						</div>
@@ -86,10 +80,6 @@
 								if(document.forms[0].name.value == "")
 								{
 									msg = "請輸入參與者ID";
-								}
-								else if(document.forms[0].check_in_time.value == "")
-								{
-									msg = "請輸入簽到時間";
 								}
 								else if(document.forms[0].check_out_time.value == "")
 								{
@@ -124,12 +114,12 @@
 			</div>
 		</footer>
 
-	<!-- Scripts -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.scrolly.min.js"></script>
-	<script src="../assets/js/skel.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
 
-	</body>
-	</html>
+		</body>
+</html>

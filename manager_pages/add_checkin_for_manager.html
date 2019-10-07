@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Add Event - NCCU Attendance</title>
+		<title>Add Check-in Record - NCCU Attendance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -44,7 +44,7 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>手動新增報到或刷退紀錄</h1>
+						<h1>新增報到紀錄</h1>
 					</header>
 
 					<!-- Form -->
@@ -53,26 +53,47 @@
 						<!--<div class="row uniform">-->
 						<div align="center">
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="name" value="" placeholder="參與者id" />
+								<p style="text-align: left; margin-bottom: 5px;" >參與者ID</p>
+								<input type="text" name="name" id="userID" placeholder="參與者ID" />
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="date" id="name" value="" placeholder="報到時間 ex.2019/10/10 10:00" />
+								<p style="text-align: left; margin-bottom: 5px;" >簽到時間</p>
+								<input class="inline" name="check_in_time" type="datetime-local" id="check_in_addDateTime" />
 							</div>
 							<br>
-							<div class="6u$ 12u$(xsmall)">
-								<input type="text" name="points" id="name" value="" placeholder="刷退時間 ex.2019/10/10 12:00" />
-							</div>
-							<br>
+
 
 
 							<!-- Break -->
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" value="新增報到或刷退紀錄" /></li>
+									<li><input type="submit" onclick="return CheckFunc();" value="新增報到紀錄" /></li>
 									<li><input type="reset" value="重填資料" class="alt" /></li>
 								</ul>
 							</div>
+
+							<script language="javascript" type="text/javascript">
+								function CheckFunc()
+								{
+									msg = "";
+									if(document.forms[0].name.value == "")
+									{
+										msg = "請輸入參與者ID";
+									}
+									else if(document.forms[0].check_in_time.value == "")
+									{
+										msg = "請輸入簽到時間";
+									}
+									else
+									{
+										return true;
+									}
+									alert(msg);
+									return false;
+								}
+							</script>
+
 						</div>
 					</form>
 				</div>
@@ -86,6 +107,9 @@
 					<!-- <li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li> -->
 					<!--<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>-->
 					<li><span class="icon fa-envelope"></span> <a href="#">105306094@nccu.edu.tw</a></li>
+					<br>
+					<br>
+					<li><a href="">常見問題</a></li>
 				</ul>
 			</div>
 		</footer>

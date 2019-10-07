@@ -47,32 +47,42 @@
 					<header class="align-center">
 						<h1>新增活動</h1>
 					</header>
-
+					<hr>
 					<!-- Form -->
 
 					<form method="post" action="#">
 						<!--<div class="row uniform">-->
 						<div align="center">
-							<h4>活動id(屆時將自動生成)</h4>
 
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="event_name" placeholder="活動名稱" />
+								<p style="text-align: left; margin-bottom: 5px;" >活動名稱</p>
+								<input type="text" name="name" id="event_name" placeholder="活動名稱">
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input class="inline" type="datetime-local" id="addDateTime" />
-							</div>
-							<br>
-							<div class="6u 12u$(xsmall)">
+								<p style="text-align: left; margin-bottom: 5px;">活動地點</p>
 								<input type="text" name="location" id="event_location" placeholder="活動地點" />
 							</div>
 							<br>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="number" name="points" id="investment" min="0" placeholder="投入資金" />
+								<p style="text-align: left; margin-bottom: 5px;">活動連結</p>
+								<input type="url" name="event_link" id="event_link" placeholder="活動連結" />
+							</div>
+							<br>
+							<div class="6u 12u$(xsmall)">
+								<p style="text-align: left; margin-bottom: 5px;">開始時間</p>
+								<input class="inline" type="datetime-local" name="start_time" id="addStartTime"/>
+							</div>
+							<br>
+							<div class="6u 12u$(xsmall)">
+								<p style="text-align: left; margin-bottom: 5px;">結束時間</p>
+								<input class="inline" type="datetime-local" name="end_time" id="addEndTime"/>
 							</div>
 							<br>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="url" name="event_link" id="event_link" placeholder="活動連結" />
+								<p style="text-align: left; margin-bottom: 5px;">投入資金</p>
+								<input type="number" name="points" id="investment" min="0" placeholder="投入資金" />
+								<p style="text-align: right; margin-bottom:5px;">公帳餘額：4000</p>
 							</div>
 							<br>
 							<p>請注意！當你新增此活動後，該活動的投資金額不可再做更動。
@@ -83,10 +93,47 @@
 							<!-- Break -->
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" value="新增活動" /></li>
+									<li><input type="submit" onclick="return CheckFunc();" value="新增活動" /></li>
 									<li><input type="reset" value="重填資料" class="alt" /></li>
 								</ul>
 							</div>
+
+							<script language="javascript" type="text/javascript">
+								function CheckFunc()
+								{
+									msg = "";
+									if(document.forms[0].name.value == "")
+									{
+										msg = "請輸入活動名稱";
+									}
+									else if(document.forms[0].location.value == "")
+									{
+										msg = "請輸入活動地點";
+									}
+									else if(document.forms[0].event_link.value == "")
+									{
+										msg = "請輸入活動連結";
+									}
+									else if(document.forms[0].start_time.value == "")
+									{
+										msg = "請輸入開始時間";
+									}
+									else if(document.forms[0].end_time.value == "")
+									{
+										msg = "請輸入結束時間";
+									}
+									else if(document.forms[0].points.value == "")
+									{
+										msg = "請輸入投入資金";
+									}
+									else
+									{
+										return true;
+									}
+									alert(msg);
+									return false;
+								}
+							</script>
 
 						</div>
 					</form>
@@ -101,6 +148,9 @@
 					<!-- <li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li> -->
 					<!--<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>-->
 					<li><span class="icon fa-envelope"></span> <a href="#">105306094@nccu.edu.tw</a></li>
+					<br>
+					<br>
+					<li><a href="">常見問題</a></li>
 				</ul>
 			</div>
 		</footer>

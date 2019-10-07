@@ -55,83 +55,99 @@
 							<h4>活動id(屆時將自動生成，因為由管理員興建，故活動id為管理員適用)</h4>
 
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="name" value="" placeholder="承辦商id" />
+								<p style="text-align: left; margin-bottom: 5px;" >承辦商ID</p>
+								<input type="text" name="sponsorID" id="sponsorID" value="" placeholder="承辦商ID" />
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="name" value="" placeholder="承辦商名稱" />
+								<p style="text-align: left; margin-bottom: 5px;" >承辦商名稱</p>
+								<input type="text" name="sponsorName" id="sponsorName" value="" placeholder="承辦商名稱" />
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="name" value="" placeholder="活動名稱" />
+								<p style="text-align: left; margin-bottom: 5px;" >活動名稱</p>
+								<input type="text" name="eventName" id="eventName" value="" placeholder="活動名稱" />
 							</div>
 							<br>
 							<div class="6u 12u$(xsmall)">
-								<input type="text" name="date" id="name" value="" placeholder="活動日期" />
+								<p style="text-align: left; margin-bottom: 5px;">活動地點</p>
+								<input type="text" name="location" id="eventLocation" placeholder="活動地點" />
 							</div>
 							<br>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="text" name="place" id="name" value="" placeholder="活動地點" />
+								<p style="text-align: left; margin-bottom: 5px;">活動連結</p>
+								<input type="url" name="event_link" id="eventLink" placeholder="活動連結" />
+							</div>
+							<br>
+							<div class="6u 12u$(xsmall)">
+								<p style="text-align: left; margin-bottom: 5px;">開始時間</p>
+								<input class="inline" type="datetime-local" name="start_time" id="addStartTime"/>
+							</div>
+							<br>
+							<div class="6u 12u$(xsmall)">
+								<p style="text-align: left; margin-bottom: 5px;">結束時間</p>
+								<input class="inline" type="datetime-local" name="end_time" id="addEndTime"/>
 							</div>
 							<br>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="text" name="points" id="name" value="" placeholder="投入資金" />
+								<p style="text-align: left; margin-bottom: 5px;">投入資金</p>
+								<input type="number" name="points" id="investment" min="0" placeholder="投入資金" />
 							</div>
 							<br>
-
-							<!-- Break -->
-							<!--下拉式選單
-							<div class="12u$">
-								<div class="select-wrapper">
-									<select name="category" id="category">
-										<option value="">- Category -</option>
-										<option value="1">Manufacturing</option>
-										<option value="1">Shipping</option>
-										<option value="1">Administration</option>
-										<option value="1">Human Resources</option>
-									</select>
-								</div>
-							</div> -->
-
-							<!-- Break -->
-							<!--單選題
-							<div class="4u 12u$(small)">
-								<input type="radio" id="priority-low" name="priority" checked>
-								<label for="priority-low">Low Priority</label>
-							</div>
-							<div class="4u 12u$(small)">
-								<input type="radio" id="priority-normal" name="priority">
-								<label for="priority-normal">Normal Priority</label>
-							</div>
-							<div class="4u$ 12u$(small)">
-								<input type="radio" id="priority-high" name="priority">
-								<label for="priority-high">High Priority</label>
-							</div> -->
-
-							<!-- Break -->
-							<!--勾選處
-							<div class="6u 12u$(small)">
-								<input type="checkbox" id="copy" name="copy">
-								<label for="copy">Email me a copy of this message</label>
-							</div>
-							<div class="6u$ 12u$(small)">
-								<input type="checkbox" id="human" name="human" checked>
-								<label for="human">I am a human and not a robot</label>
-							</div> -->
-
-							<!-- Break -->
-							<!--簡答處
-							<div class="12u$">
-								<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-							</div> -->
 
 							<!-- Break -->
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" value="新增活動" /></li>
+									<li><input type="submit" onclick="return CheckFunc();" value="新增活動" /></li>
 									<li><input type="reset" value="重填資料" class="alt" /></li>
 								</ul>
 							</div>
+
+							<script language="javascript" type="text/javascript">
+								function CheckFunc()
+								{
+									msg = "";
+									if(document.forms[0].sponsorID.value == "")
+									{
+										msg = "請輸入承辦商ID";
+									}
+									else if(document.forms[0].sponsorName.value == "")
+									{
+										msg = "請輸入承辦商名稱";
+									}
+									else if(document.forms[0].eventName.value == "")
+									{
+										msg = "請輸入活動名稱";
+									}
+									else if(document.forms[0].location.value == "")
+									{
+										msg = "請輸入活動地點";
+									}
+									else if(document.forms[0].event_link.value == "")
+									{
+										msg = "請輸入活動連結";
+									}
+									else if(document.forms[0].start_time.value == "")
+									{
+										msg = "請輸入開始時間";
+									}
+									else if(document.forms[0].end_time.value == "")
+									{
+										msg = "請輸入結束時間";
+									}
+									else if(document.forms[0].points.value == "")
+									{
+										msg = "請輸入投入資金";
+									}
+									else
+									{
+										return true;
+									}
+									alert(msg);
+									return false;
+								}
+							</script>
+
 						</div>
 					</form>
 					</div>
@@ -145,6 +161,9 @@
 					<!-- <li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li> -->
 					<!--<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>-->
 					<li><span class="icon fa-envelope"></span> <a href="#">105306094@nccu.edu.tw</a></li>
+					<br>
+					<br>
+					<li><a href="">常見問題</a></li>
 				</ul>
 			</div>
 		</footer>
