@@ -14,23 +14,12 @@
 
 @media screen and (max-width: 480px) {
 
-    #header nav.right {
-        display: block;
-    }
-
     #header nav .button {
         padding: 0 1em;
         height: 2em;
         line-height: 2em;
-        font-size: x-small;
+        font-size: 0.1em;
     }
-
-    #header {
-        min-width: 320px;
-    }
-
-
-
 }
 
 .inline {
@@ -53,11 +42,11 @@
 }
 
 .modal-header .close {
-    margin-top: -39px;
+    margin-top: -53px;
 }
 
 .modal-title {
-    margin-bottom: 0;
+    margin-bottom: -30px;
     line-height: 1.5;
     text-align: center;
 }

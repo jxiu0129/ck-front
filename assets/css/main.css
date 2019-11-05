@@ -2774,7 +2774,7 @@
 		}
 
 			#header .logo {
-				font-size: 1.75em;
+				font-size: 1.5em;
 				text-align: center;
 			}
 
@@ -2797,7 +2797,7 @@
 
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 630px) {
 
 		body {
 			padding-top: 44px;
@@ -2809,7 +2809,7 @@
 		}
 
 		#header .logo {
-			font-size: 1em;
+			font-size: 1.25em;
 			text-align: center;
 		}
 
@@ -2830,6 +2830,41 @@
 			display: none;
 		}
 	}
+
+@media screen and (max-width: 480px) {
+
+	body {
+		padding-top: 44px;
+	}
+
+	#header {
+		height: 44px;
+		line-height: 44px;
+	}
+
+	#header .logo {
+		font-size: 1em;
+		text-align: center;
+	}
+
+	#header .logo_img {
+		height: 18px;
+		width: 13px;
+	}
+
+	#header nav a[href="#menu"] {
+		font-size: 1em;
+	}
+
+	#header nav.left {
+		left: 1em;
+	}
+
+	#header nav.right {
+		display: none;
+		display: block;
+	}
+}
 
 /* Menu */
 
@@ -3174,10 +3209,6 @@
 	}
 
 	@media screen and (max-width: 980px) {
-
-		#three {
-			text-align: center;
-		}
 
 	}
 
