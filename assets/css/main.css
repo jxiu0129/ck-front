@@ -2693,7 +2693,7 @@
 			font-family: "Pacifico", cursive;
 			font-size: 2.5em;
 			letter-spacing: 2px;
-			margin-top: 0px;
+			margin-top: 9px;
 			text-decoration: none;
 			display: inline-block;
 		}
@@ -2776,11 +2776,12 @@
 			#header .logo {
 				font-size: 1.5em;
 				text-align: center;
+				margin-top: 5px;
 			}
 
 			#header .logo_img {
 				height: 27px;
-				width: 19.5px;
+				width: 195px;
 			}
 
 			#header nav a[href="#menu"] {
@@ -2811,11 +2812,12 @@
 		#header .logo {
 			font-size: 1.25em;
 			text-align: center;
+			margin-top: 5px;
 		}
 
 		#header .logo_img {
 			height: 18px;
-			width: 13px;
+			width: 150px;
 		}
 
 		#header nav a[href="#menu"] {
@@ -2845,11 +2847,12 @@
 	#header .logo {
 		font-size: 1em;
 		text-align: center;
+		margin-top: 5px;
 	}
 
 	#header .logo_img {
 		height: 18px;
-		width: 13px;
+		width: 150px;
 	}
 
 	#header nav a[href="#menu"] {
