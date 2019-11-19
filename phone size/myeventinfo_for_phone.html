@@ -64,7 +64,11 @@
 					<td width="600px" style= "word-break:break-all">活動1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
 				</tr>
 				<tr>
-					<td>活動日期</td>
+					<td>活動開始時間</td>
+					<td>日期1</td>
+				</tr>
+				<tr>
+					<td>活動結束時間</td>
 					<td>日期1</td>
 				</tr>
 				<tr>
@@ -82,45 +86,40 @@
 					<td>參加人數</td>
 					<td><a href="../after_login_pages/attendancelist.html">100</td>
 				</tr>
-				<tr>
-					<th>活動結束（發放點數）</th>
-					<td>
-						<img src="../images/stop.png" height="15" width="15"/>
-						<a href="" class="important" data-toggle="modal" data-target="#end">活動結束</a>
-					</td>
-
-					<!-- Modal -->
-					<div class="modal fade" id="end" tabindex="-1" role="dialog" aria-labelledby="end_event" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h3 class="modal-title" id="event-deleteLabel">活動結束</h3>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<p>請注意！當你按下活動結束，該活動將開始發放點數。</p>
-									<p>一旦開始發放點數，活動細則及出席表將再也無法更動。</p>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-									<button type="button" class="btn btn-primary">活動結束</button>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-					</tr>
 				</tbody>
 			</table>
 		</div>
 
 		<!--button-->
 		<ul class="actions fit">
-			<li><a href="myrecords_for_phone.html" class="button fit">回到上一頁</a></li>
+			<li><a href="myrecords_for_phone.html" class="button alt fit">回到上一頁</a></li>
+			<li><a href="" class="important button fit" data-toggle="modal" data-target="#end">
+				<img src="../images/stop.png" height="15" width="15"/>活動結束</a>
+			</li>
 		</ul>
+
+		<!-- Modal -->
+		<div class="modal fade" id="end" tabindex="-1" role="dialog" aria-labelledby="end_event" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title" id="event-deleteLabel">活動結束</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>請注意！當你按下活動結束，該活動將開始發放點數。</p>
+						<p>一旦開始發放點數，活動細則及出席表將再也無法更動。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary">活動結束</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
