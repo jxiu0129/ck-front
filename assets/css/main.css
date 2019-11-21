@@ -1621,6 +1621,10 @@
 		line-height: 1.65;
 	}
 
+	table{
+		font-size: 14px;
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
@@ -1658,7 +1662,9 @@
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
+			table{
+				font-size: 12px;
+			}
 		}
 
 	a {
